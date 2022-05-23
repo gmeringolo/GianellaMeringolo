@@ -1,0 +1,358 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;    
+}
+
+li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+}
+
+.titular{
+    text-align: left;
+    margin-top: 200px;    
+}
+
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-left: 22px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background: #663399;
+    padding: 16px 28px 16px 28px;
+    margin-left: 160px;
+}
+
+header{
+    background: url(FondoPagWeb6.png);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+
+}
+/*Arranca sección sobre mi*/
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal; /*para sacarle la negrita*/
+
+}
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 150px 150px 120px;
+    
+}
+
+.cont-p-btn{
+    width: 55%;
+}
+
+.cont-p-btn p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.cont-p-btn a{
+    margin-left: 0;
+    display: inline-block; /*para que funcione el margin*/
+    margin-top: 20px;
+}
+
+/*Arranca sección Servicios*/
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;/*para que sean solo 3 en cada linea*/
+    justify-content: space-around;
+    margin: 60px;
+
+}
+
+.servicio{
+    width: 25%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 30px; /*borde redondeado*/
+    margin-bottom: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.violeta{
+    background: #6e4994;    
+}
+
+.lila{
+    background: #b376b3;    
+}
+
+.servicio h4{
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+.servicio img{
+    float: right; /*para que la imagen flote hacia la derecha*/
+}
+
+.servicio p{
+    font-size: 18px;
+    height: 250px;
+}
+
+/*agrandamos las flechas del carousel*/
+span{
+    font-size: 80px;
+    color: blueviolet;
+}
+
+.owl-nav{
+    text-align: center;
+}
+
+/*Sección Por que trabajar conmigo*/
+.cont-trab{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cont-trab h4{
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+.cont-trab p{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.trab-sing{
+    width: 28%;
+}
+
+#blog{
+    background: #F9FAFC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor-blog{
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicacion{
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;/*sombra*/
+    padding-bottom: 20px;
+}
+
+/*para que la imagen ocupe el 100% de la tarjeta*/
+#blog img{
+    width: 100%;
+}
+
+#blog h4{
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+
+#blog p{
+    color: #5A6169;
+    line-height: 24px; /*para separar la linea de los parrafos*/
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+    text-align: justify;
+}
+
+#blog a{
+    display: inline-block; /*para convertir de un elemento en linea a un elemento en bloque*/
+    margin-left: 20px;
+}
+/*para modificar la altura de la segunda imagen*/
+.altura2 img{
+    height: 370px;
+}
+
+.parrafo1 p{
+    padding: 0px 20px 20px 20px !important;
+}
+
+#contacto{
+    background: linear-gradient(rgba(72, 61, 139, .94), rgba(147, 112, 219, .9));    
+    text-align: center;
+    padding: 30px 0 50px 0 ;
+}
+
+#contacto h3{
+    font-size: 23px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#contacto a{
+    margin-left: 0px !important;
+    padding: 15px 45px 15px 45px;
+    transition: 1s;
+}
+
+/*efecto al boton*/
+#contacto a:hover{
+    color:black;
+    transition: 1s;
+    transform: scale(1.2);
+    display: inline-block;
+}
+
+#whatsapp a{
+    background: none;
+    position: fixed; /*para que la posición del botón sea fija*/
+    top: 85%;
+    right: 1%;
+}
+
+.menu-icon{
+    display: none;/*para que no aparezca cuando la resolución es mayor a la que pusimos en el @media*/
+}
+
+@media (max-width: 800px){
+    /*se va a aplicar cuando el maximo de ancho sea de 480px*/
+    nav{
+        position: absolute;/*para fijar absolutamente un elemento */
+        top: 70px;
+        left: 0px;
+        background: rgba(102, 51, 153, 0.5);
+        color: white;
+        width: 100%;
+        display: none;
+    }
+
+    nav .lista{
+        flex-direction: column;
+        display: flex;
+    }
+    .menu-icon{
+        display: block;/*mostrar el elemento, lo contrario de none*/
+        width: 25px;
+    }
+
+    .titular{
+        text-align: center;
+        margin-top: 90px;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+
+    a{        
+        margin-left: 0px;
+    }
+    header{
+        background: url(FondoPagWeb9.png);
+        height: 100vh;
+        width: auto;
+        background-size: cover;    
+    }
+
+    .contenedor-sobremi{
+        flex-direction: column;
+    }
+
+    .cont-p-btn{
+        width: 250%;
+        position: center;
+    }
+
+    .cont-p-btn a{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .contenedor-servicios{
+        flex-direction: column;
+    }
+
+    .servicio{
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .servicio h4{
+        font-size: 25px;
+    }
+
+    .servicio img{
+        margin-bottom: 0px;
+    }
+
+    h3{
+        font-size: 46px;
+    }
+
+    .cont-trab{
+        flex-direction: column;
+    }
+
+    .trab-sing{
+        width: 95%;
+        margin: auto;
+    }
+
+    .contenedor-blog{
+        flex-direction: column;
+    }
+
+    .publicacion{
+        width: 85%;
+        margin: auto;
+    }
+
+    .img-sobremi{
+        width: 180%;
+    }
+}
+
+
