@@ -47,11 +47,20 @@ h2{
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+button{
+    text-decoration: none;
     color: white;
     font-size: 14px;
     background: #663399;
     padding: 16px 28px 16px 28px;
-    margin-left: 160px;
+    margin-left: 160px;    
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 header{
@@ -86,10 +95,10 @@ h3{
     text-align: justify;
 }
 
-.cont-p-btn a{
+.cont-p-btn button{
     margin-left: 0;
     display: inline-block; /*para que funcione el margin*/
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /*Arranca sección Servicios*/
@@ -176,6 +185,14 @@ span{
     justify-content: space-around;
 }
 
+.contenedor-blog a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background: #663399;
+    padding: 16px 28px 16px 28px;
+    margin-left: 160px;
+}
 .publicacion{
     width: 30%;
     box-shadow: 1px 1px 14px #ccc;/*sombra*/
@@ -224,14 +241,16 @@ span{
 #contacto h3{
     font-size: 23px;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-#contacto a{
+#contacto button{
     margin-left: 0px !important;
+    margin-top: 0px;
     padding: 15px 45px 15px 45px;
     transition: 1s;
 }
+
 
 /*efecto al boton*/
 #contacto a:hover{
