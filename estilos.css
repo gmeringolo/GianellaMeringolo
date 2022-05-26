@@ -55,7 +55,7 @@ a{
 }
 
 header{
-    background: url(FondoPagWeb6.png);
+    background: url(img/FondoPagWeb6.png);
     height: 100vh;
     width: auto;
     background-size: cover;
@@ -289,7 +289,7 @@ span{
         margin-left: 0px;
     }
     header{
-        background: url(FondoPagWeb9.png);
+        background: url(img/FondoPagWeb9.png);
         height: 100vh;
         width: auto;
         background-size: cover;    
